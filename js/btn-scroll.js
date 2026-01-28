@@ -1,7 +1,12 @@
 const scrollUpBtn = document.querySelector('.scroll-up');
+const scrollContainer = document.scrollingElement || document.documentElement;
+
+const showAfterPercent = 0.15;
 
 window.addEventListener('scroll', () => {
-  if (window.scrollY > 300) {
+  const viewportHeight = window.innerHeight;
+
+  if (scrollContainer.scrollTop > viewportHeight * showAfterPercent) {
     scrollUpBtn.classList.add('visible');
   } else {
     scrollUpBtn.classList.remove('visible');
@@ -9,7 +14,7 @@ window.addEventListener('scroll', () => {
 });
 
 scrollUpBtn.addEventListener('click', () => {
-  window.scrollTo({
+  scrollContainer.scrollTo({
     top: 0,
     behavior: 'smooth',
   });

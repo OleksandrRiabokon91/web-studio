@@ -309,9 +309,6 @@ button {
   margin-bottom: auto;
 }
 
-.mobile-nav {
-}
-
 .mobile-nav-list {
   display: flex;
   flex-direction: column;
