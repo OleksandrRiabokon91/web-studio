@@ -5,10 +5,22 @@
     modal: document.querySelector('[data-modal]'),
   };
 
-  refs.openModalBtn.addEventListener('click', toggleModal);
-  refs.closeModalBtn.addEventListener('click', toggleModal);
+  refs.openModalBtn.addEventListener('click', openModal);
+  refs.closeModalBtn.addEventListener('click', closeModal);
 
-  function toggleModal() {
-    refs.modal.classList.toggle('is-open');
+  function openModal() {
+    refs.modal.classList.add('is-open');
+    document.addEventListener('keydown', onEscPress);
+  }
+
+  function closeModal() {
+    refs.modal.classList.remove('is-open');
+    document.removeEventListener('keydown', onEscPress);
+  }
+
+  function onEscPress(e) {
+    if (e.key === 'Escape') {
+      closeModal();
+    }
   }
 })();
