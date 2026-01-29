@@ -8,7 +8,8 @@ devices, and simple, well-isolated JavaScript.
 
 ## Live Demo
 
-👉 **Live page:** https://oleksandrriabokon91.github.io/web-studio/
+👉 **Live page:**  
+https://oleksandrriabokon91.github.io/web-studio/
 
 ---
 
@@ -54,19 +55,19 @@ consistent behavior across different devices.
 
 ---
 
-Getting Started Clone the repository:
+## Getting Started
 
-git clone https://github.com/OleksandrRiabokon91/web-studio.git Open index.html
-directly in your browser.
+Clone the repository:
+
+bash git clone https://github.com/OleksandrRiabokon91/web-studio.git Open
+index.html directly in your browser.
 
 No additional setup or build step is required.
 
-Author Oleksandr Riabokon
+## Author
+
+Oleksandr Riabokon
 
 LinkedIn: https://www.linkedin.com/in/oleksandr-riabokon-86730a376
 
 Email: riabokon.oleksandr@gmail.com
-
-```
-
-```
