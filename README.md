@@ -56,7 +56,7 @@ consistent behavior across different devices.
 
 Getting Started Clone the repository:
 
-git clone https://github.com/yourusername/web-studio-landing.git Open index.html
+git clone https://github.com/OleksandrRiabokon91/web-studio.git Open index.html
 directly in your browser.
 
 No additional setup or build step is required.
